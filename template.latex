@@ -61,6 +61,8 @@ $endif$
   \usepackage[unicode=true]{hyperref}
 \fi
 \usepackage[usenames,dvipsnames]{color}
+\usepackage{breakurl}
+%\def\UrlBreaks{\do\/\do-\do8}
 \hypersetup{breaklinks=true,
             bookmarks=true,
             pdfauthor={$author-meta$},
@@ -70,7 +72,7 @@ $endif$
             urlcolor=$if(urlcolor)$$urlcolor$$else$blue$endif$,
             linkcolor=$if(linkcolor)$$linkcolor$$else$magenta$endif$,
             pdfborder={0 0 0}}
-\urlstyle{same}  % don't use monospace font for urls
+%\urlstyle{same}  % don't use monospace font for urls
 $if(lang)$
 \ifxetex
   \usepackage{polyglossia}
